@@ -1,0 +1,197 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    
+    background-color: #111827;
+    /* background-color: red; */
+}
+
+h1{
+    position: absolute;
+    width: 328px;
+    height: 75px;
+    left: 160px;
+    top: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.elipse{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 510px;
+    top: 126px;
+    border-radius: 40px;
+    background: #0073B0;
+}
+
+.imgprincipal{
+    position: absolute;
+    width: 576px;
+    height: 476.48px;
+    left: 145px;
+    top: 274px;
+}
+
+.caixadelogin{
+    position: absolute;
+    width: 480px;
+    height: 435px;
+    left: 800px;
+    top: 291px;
+    
+    background: #F9F9FB;
+    border-radius: 4px;
+}
+h3{
+    position: absolute;
+    width: 100px;
+    height: 47px;
+    left: 185px;
+    top: 55px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+.inputemail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 40px;
+    top: 125px;
+    background: rgba(113, 128, 185, 0.32);
+    border-radius: 4px;
+    background-image: url(./img/EnvelopeSimple.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 0% 9%; 
+}
+    
+.inputsenha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 40px;
+    top: 198px;
+    background: rgba(113, 128, 185, 0.32);
+    border-radius: 4px;
+    background-image: url(./img/Lock.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 0% 9%;
+}
+.botaologin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 40px;
+    top: 270px;
+    background: #7180B9;
+    border-radius: 4px;
+}
+.botaologin:hover{
+    background-color:#6270aa;
+}
+.plogin{
+    width: 43px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.linha{
+    position: absolute;
+    width: 124px;
+    height: 0px;
+    left: 178px;
+    top: 342px;
+    
+    border: 2px solid rgba(0, 0, 0, 0.32);
+}
+.pp{
+    position: absolute;
+    width: 127px;
+    height: 24px;
+    left: 40px;
+    top: 385px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.botaogithub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    position: absolute;
+    width: 244px;
+    height: 48px;
+    left: 196px;
+    top: 374px;
+    background: #7180B9;
+    border-radius: 4px;
+    background-image: url(./img/GithubLogo.svg);
+    background-position: 60px;
+    background-repeat: no-repeat;
+    padding: 0% 9%;
+}
+.botaogithub:hover{
+    background-color:#6270aa;
+}
+.pgithub{
+    width: 53px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
