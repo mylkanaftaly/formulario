@@ -1,14 +1,31 @@
-const form = document.querySelector('#login-form');
+const emailRegex =
+  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+const passwordRegex = /^[A-Za-z0-9]\w{8,}$/;
+const loginBtn = document.getElementById("login");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // previne que a página recarregue ao enviar o formulário
+loginBtn.addEventListener("click", (e) => {
+  e.preventDefault();
 
-  const email = document.querySelector('#username').value;
-  const password = document.querySelector('#password').value;
+  email.style.border = "none";
+  password.style.border = "none";
 
-  // Aqui você pode fazer a validação das informações do usuário
-  // por exemplo, comparando com uma lista de usuários e senhas permitidos
-
-  // Se as informações do usuário estiverem corretas, redireciona para a página principal
-  window.location.href = 'pagina-principal.html';
+  if (!emailRegex.test(email.value) && !passwordRegex.test(password.value)) {
+    email.style.border = "2px solid red";
+    password.style.border = "2px solid red";
+  } else if (
+    emailRegex.test(email.value) &&
+    !passwordRegex.test(password.value)
+  ) {
+    password.style.border = "2px solid red";
+  } else if (
+    !emailRegex.test(email.value) &&
+    passwordRegex.test(password.value)
+  ) {
+    email.style.border = "2px solid red";
+  } else {
+    email.style.border = "2px solid rgb(0, 156, 60)";
+    password.style.border = "2px solid rgb(0, 156, 60)";
+  }
 });
